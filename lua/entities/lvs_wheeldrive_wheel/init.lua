@@ -81,7 +81,7 @@ function ENT:GetSuspensionStiffness()
 end
 
 function ENT:Initialize()
-	self:SetCollisionGroup( COLLISION_GROUP_PASSABLE_DOOR )
+	self:SetCollisionGroup( COLLISION_GROUP_WORLD ) -- DEBRIS?
 
 	-- this is so vj npcs can still see us
 	self:AddEFlags( EFL_DONTBLOCKLOS )
